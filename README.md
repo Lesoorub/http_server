@@ -1,7 +1,7 @@
 # http_server
  This is the simplest http server framework.
 
-# Compile
+# Compilation
 `cd http_server`<br>
 `cargo build --release`
 
