@@ -1,13 +1,22 @@
 # http_server
  This is the simplest http server framework.
 
+# Opportunities
+ With this library, you can process input requests of any type (GET, POST, PUT, and e.tc .) and return any data in response to them: files, strings and byte arrays.
+
+# Minuses
+ Dynamic path processing has not been implemented yet, this imposes many restrictions.
+
 # Compilation
-`cd http_server`<br>
-`cargo build --release`
+Clone repository: `git clone https://github.com/Lesoorub/http_server`
+Go to the repository: `cd http_server`<br>
+Build library: `cargo build --release`
 
 # Install
-In Cargo.toml add next line after `[dependencies]`: <br>
+Since this is a library, you need to add a link to it in your `Cargo.toml` file:
+Add next line after `[dependencies]`: <br>
 `http_server = { path = "http_server" }`
+In the path, you need to specify a relative or absolute path to the cloned library repository.
 
 # Usage 
 Example: <br>
