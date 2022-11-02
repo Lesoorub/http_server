@@ -43,7 +43,7 @@ fn home(_: &mut Request) -> Response
 }
 fn test(_: &mut Request) -> Response
 {
-    http_server::file("test.html")
+    http_server::str("<html><body>Tets</body></html>")
 }
 fn root(_: &mut Request) -> Response
 {
@@ -52,7 +52,7 @@ fn root(_: &mut Request) -> Response
 
 fn _404(_: &mut Request) -> Response
 {
-    http_server::file("404.html")
+    http_server::bytes(vec![ b'4', b'0', b'4' ])
 }
 ```
 ``````
