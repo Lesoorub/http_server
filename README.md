@@ -43,7 +43,7 @@ fn home(_: &mut Request) -> Response
 }
 fn test(_: &mut Request) -> Response
 {
-    http_server::str("<html><body>Tets</body></html>")
+    http_server::str("<html><body>Test</body></html>")
 }
 fn root(_: &mut Request) -> Response
 {
